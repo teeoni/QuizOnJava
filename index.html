@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Game </title>
+    <link rel="stylesheet" href="/assets/style.css">
+    
+</head>
+
+
+<body class = "container">
+
+
+    <!-- Title of Quiz Game -->
+    <header>
+        <h1>Quiz Game</h1>
+
+
+    </header>
+
+    <!-- The timer and reset will exist on nav-->
+    <nav id = "navbar">
+        <p id = 'timer' class = 'hide'>Timer</p>
+
+        <p id = 'score' class = 'hide'>Score: 0</p>
+
+        <p id = 'feedback' class = 'hide'></p>
+
+        <p id = "highScore" class = "hide , scoreboard" ></p>
+
+        <button id="reset-btn" class = 'hide'>Reset</button>
+
+    </nav>
+
+
+    <!-- This will be two compartments with the quiz question on the left side and multiple choice answers on the right-->
+    <main>
+
+
+        <section id = "question-container" class = 'hide'>
+            <h2 id = "question-num">Insert Question #</h2>
+
+            <p id= "question">Insert Question Here</p>
+
+
+
+        </section class = 'hide'>
+
+
+        <Section id = "choices-container" class = 'hide'>
+            <button id="ans-btn">Insert Option 1</button>
+            <button id="ans-btn">Insert Option 2</button>
+            <button id="ans-btn">Insert Option 3</button>
+            <button id="ans-btn">Insert Option 4</button>
+
+
+        </Section>
+
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="next-btn" class="hide">Next</button>
+
+
+        </div>
+
+
+       
+
+    </main>
+
+    <div>
+
+        <form class ="hide" id="form">
+            <ul>
+                <li>
+                    <label for="msg" id = "finalscore-msg">Final Score is: </label>                    
+                </li>
+                <li>
+                <textarea name="Initials" id="username">Write Initials Here</textarea>
+                </li>
+            </ul>
+            <button id="save-btn">Save</button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <h4>Quiz created by Tony Zepeda</h4>
+
+
+
+    </footer>
+
+
+</body>
+
+<script src="/assets/script.js"></script>
